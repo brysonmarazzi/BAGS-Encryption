@@ -1,0 +1,325 @@
+body{
+    background-color: #010206; 
+    background-image: url(images/blue-forest.jpg); 
+    background-size:cover;
+    background-position: relative;
+    background-repeat: no-repeat; 
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 400px;
+    border-bottom: 30px;
+}
+
+.nav{
+    color: white; 
+}
+
+/*
+.helpSpot{
+    padding-left: 20px;
+    padding-right: 32px;
+    color: black; 
+    background-color: #EFF2FD;
+    position: relative; 
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    width: 95%; 
+    height: 370px; 
+    left: 50%;
+    margin-left: -450px;
+    font-size: 16px;
+    top: 900px;  
+}
+*/
+
+.helpSpot{
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-color: #EFF2FD; 
+    height: 270px; 
+    position: absolute; 
+    top: 1000px;
+    padding-left: 20px;
+    padding-right: 32px;
+}
+
+.helpSpot p, u{
+    position: relative; 
+    bottom: -22px;
+}
+
+#steps{
+    position: relative; 
+    bottom: -22px;
+}
+
+#stepsJump{
+     position: relative; 
+    bottom: -22px;
+    list-style: none;
+}
+
+.nav a{
+    color: white; 
+    font-family: sans-serif;
+}
+
+.nav li{
+    color: white; 
+    display:inline;
+    text-align: left; 
+    text-decoration: none;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container{ 
+    background-color: #EFF2FD;
+    border-radius: 25px;
+    width: 900px;
+    height: 800px;
+    position: relative;
+    left: 50%;
+    margin-left: -450px;
+    top: 50%;
+    margin-top: -80px;
+    font-family: monospace;  
+}
+
+.Generate{
+    position: relative; 
+    text-align: left;
+    float: left; 
+    width: 100%; 
+    height: 120px;
+    padding-top: 30px;
+}
+
+.Generate input{
+    display: block;
+    position: relative; 
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    width: 600px; 
+    height: 50px; 
+    left: 50%;
+    margin-left: -300px;
+    font-size: 20px;
+}
+
+.Generate p{
+    position: relative; 
+    display: inline; 
+    font-size: 16px;
+    left: 125px;
+    top: 5px; 
+    float:left;
+    width: 9cm;
+}
+
+.END{
+    background-color: #DEE2F2;
+    float: left;
+    width: 100%; 
+    height: 370px;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.END p{
+    font-size: 16px;  
+}
+
+.END u{
+    position: relative;
+    top: 0px;
+    display: inline;
+}
+
+.OUTPUT{
+    float: left;
+    width: 100%; 
+    height: 370px;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.OUTPUT u{
+    position: relative;
+    top: -1px;
+}
+
+.jumbotron{ 
+    color: white; 
+    font-family:fantasy;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    top: -40px;
+}
+
+@media only screen and (max-width: 899px){
+    body{
+    background-image: url(images/night.jpg);
+    background-repeat: repeat; 
+    }
+    
+   .container{ 
+    color: white; 
+    background-color: unset !important;
+    }
+    
+   .END{
+    background-color:unset !important;
+    } 
+    
+    .jumbotron{ 
+    font-size: 34px;
+    }
+    
+    
+    .helpSpot{
+    background-color: white;
+    color: black;
+    width: 700px; 
+    height: 370px; 
+    left: 50%;
+    margin-left: -380px;
+    font-size: 15px; 
+    }
+    
+    #help{
+        position: relative;
+        right: 14cm; 
+    }
+    
+    
+}
+    
+@media only screen and (max-width: 809px){
+     .jumbotron{ 
+    top: -10px; 
+    font-size: 26px;
+  }
+    
+    .Generate p{
+    font-size: 14px;
+    left: 320px;
+    top: 30px; 
+    float:left;
+    width: 100%;
+}
+    
+    .Generate input{
+    width: 300px; 
+    height: 30px; 
+    top: 30px; 
+    margin-left: -150px;
+    font-size: 12px;
+}
+    
+    .helpSpot{
+    width: 500px; 
+    height: 370px; 
+    left: 50%;
+    margin-left: -276px;
+    font-size: 14px; 
+}
+    
+  .END p{
+    position: relative; 
+    font-size: 15px;
+    top: 10px; 
+}
+
+    #pub{
+        width: 280px;
+    }
+    #priv{
+        width: 272px;  
+    }
+    
+    #message{
+        width:500px; 
+    }
+    
+    .OUTPUT textarea{
+          width:500px;
+    }
+    .END{
+        font-size:16px;
+    }
+    .END u{
+    position: relative;
+    font-size: 20px;
+    top: 18px;
+    }
+    
+    .OUTPUT u{
+        font-size: 20px;
+    }
+    
+       #with{
+        display: none; 
+    }
+    
+     #help{
+        position: relative;
+        right: 18cm; 
+    }
+    
+}
+
+
+@media only screen and (max-width: 580px){
+   
+.jumbotron{ 
+    font-size: 18px;
+    }
+    
+    .nav{
+        font-size: 14px; 
+    }   
+    
+    #pub{
+        width: 200px;
+    }
+    #priv{
+        width: 192px;  
+    }
+    
+      #message{
+        width:300px; 
+        height: 70px;
+        position: relative; 
+        }
+    
+    .OUTPUT textarea{
+        width:300px; 
+        height: 70px;
+        position: relative; 
+        top: -150px; 
+    }
+    
+    .OUTPUT u{
+    display: none;
+}
+    
+   .helpSpot{
+    width: 300px; 
+    height: 430px; 
+    left: 50%;
+    margin-left: -175px;
+    top: 570px;
+    font-size: 12px; 
+}
+    
+}
+
+
+
