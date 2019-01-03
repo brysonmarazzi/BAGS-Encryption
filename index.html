@@ -10,9 +10,9 @@
         <div class ="nav">
         <A NAME="crypt"></A>
     <ul>
-        <li><A HREF="#help">How To Use</A></li>
+<!--        <li><A HREF="#help">How To Use</A></li>-->
        <li><a href = "https://www.linkedin.com/in/bryson-marazzi/" >LinkedIn</a></li>
-        <li><a href = "https://github.com/brysonmarazzi/CodeLanguage">GitHub</a></li>
+        <li><a href = "https://github.com/brysonmarazzi/BAGS-Encryption">GitHub</a></li>
     </ul>
         </div>
      <div class="jumbotron">
@@ -25,34 +25,31 @@
     <form method="get" action="generate">
         <input type="submit" value="Generate a public and private key combination">
 
-         <p>Public Key:</p><p>Private Key:</p>
+         <p>Public Key: </p><p>Private Key: </p>
 
     </form>
        </div>
    
 <div class="END">
-    
   <form action = "encryptdecrypt" method = "get">    
-      
   <u>Encrypt or Decrypt <u id="with">with the corresponding keys:</u><br></u>
        <p>Public Key:
      <textarea id="pub" rows = "1" cols = "52" name = "public"></textarea></p>
     <p>Private Key:
      <textarea id="priv" rows = "1" cols = "52" name = "private"></textarea></p>
            <textarea id="message" rows = "15" cols = "90" name = "message">Write your message here...</textarea>
-      
+      <div class="buttons">
   <br>Encrypt<input type="radio" name="crypt" value="Encrypt">
   Decrypt<input type="radio" name="crypt" value="Decrypt">
-      <input type = "submit" value = "sumbit" /><br>
-      
+      <input type = "submit" value = "submit" /><br>
+      </div>
        </form>
     </div>
      
      <div class="OUTPUT">
          <u>Output:<br></u> 
-     <textarea rows = "15" cols = "90" name = "message">The output goes here...</textarea>
+     <textarea id="output" rows = "15" cols = "90" name = "message">The output goes here...</textarea>
      </div> 
-     
      
          <div class="helpSpot">
         <A id="help" NAME="help"></A>
@@ -69,8 +66,8 @@
             <li id = "steps">Once your friend has sent you the encrypted message, enter the encrypted message with your public and private key to decrypt.</li>
                       </ol>
                     <p>NOTE: A private key is only needed for decryption, but each private key will only be useful when the message was encrypted with the corresponding public key.</p>
-             <li id = "stepsJump"><A HREF="#crypt">Return To Top</A></li>
-    </div>
+<!--             <li id = "stepsJump"><A HREF="#crypt">Return To Top</A></li>-->
+        </div>
      
      
     </div>

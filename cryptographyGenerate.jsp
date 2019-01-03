@@ -10,9 +10,8 @@
         <div class ="nav">
         <A NAME="crypt"></A>
     <ul>
-        <li><A HREF="#help">How To Use</A></li>
        <li><a href = "https://www.linkedin.com/in/bryson-marazzi/" >LinkedIn</a></li>
-        <li><a href = "https://github.com/brysonmarazzi/CodeLanguage">GitHub</a></li>
+        <li><a href = "https://github.com/brysonmarazzi/BAGS-Encryption">GitHub</a></li>
     </ul>
         </div>
      <div class="jumbotron">
@@ -48,14 +47,14 @@
       
   <br>Encrypt<input type="radio" name="crypt" value="Encrypt">
   Decrypt<input type="radio" name="crypt" value="Decrypt">
-      <input type = "submit" value = "sumbit" /><br>
+      <input type = "submit" value = "submit" /><br>
       
        </form>
     </div>
      
      <div class="OUTPUT">
          <u>Output:<br></u> 
-     <textarea rows = "15" cols = "90" name = "message"><%
+     <textarea id="output" rows = "15" cols = "90" name = "message"><%
     if(request.getAttribute("success") != null){
      %><%if((boolean)request.getAttribute("success") == true){%><%=request.getAttribute("output")%>
          <%}else{%><%=request.getAttribute("errorMessage")
@@ -69,7 +68,6 @@
      
      
          <div class="helpSpot">
-        <A id="help" NAME="help"></A>
              <u>Summary:</u>
         <p>B.A.G.S Encryption uses a public and private key combination to keep your secret messages safe. This technique is based on the difficult nature of prime factorization for very large numbers. 
         </p>
@@ -83,7 +81,6 @@
             <li id = "steps">Once your friend has sent you the encrypted message, enter the encrypted message with your public and private key to decrypt.</li>
                       </ol>
                     <p>NOTE: A private key is only needed for decryption, but each private key will only be useful when the message was encrypted with the corresponding public key.</p>
-             <li id = "stepsJump"><A HREF="#crypt">Return To Top</A></li>
     </div>
      
      
